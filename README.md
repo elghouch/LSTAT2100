@@ -9,6 +9,7 @@ Ce dépôt constitue le support de [LSTAT2100](https://uclouvain.be/cours-2023-l
 - [Tableaux de contingence et tests Chi-2](https://elghouch.github.io/LSTAT2100/Lectures/tab.pdf)
 - [Introduction aux modèles linéaires généralisés : Méthodologie et concepts généraux](https://elghouch.github.io/LSTAT2100/Lectures/glm.pdf)
 - [La régression de Poisson](https://elghouch.github.io/LSTAT2100/Lectures/pois.pdf)
+- [La régression logistique](https://elghouch.github.io/LSTAT2100/Lectures/logi.pdf)
 
 ## Documents complémentaires
 
