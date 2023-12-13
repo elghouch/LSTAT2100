@@ -13,8 +13,8 @@ Ce dépôt constitue le support de [LSTAT2100](https://uclouvain.be/cours-2023-l
 
 ## Travaux pratiques
 
-- | Série 1: Utilisation de R | [Excercices](https://elghouch.github.io/LSTAT2100/Labs/1.pdf) | [Corrigés](https://elghouch.github.io/LSTAT2100/Labs/1S.pdf) |
-
+- | Série 1 | [Excercices](https://elghouch.github.io/LSTAT2100/Labs/1.pdf) | [Corrigés](https://elghouch.github.io/LSTAT2100/Labs/1S.pdf) |
+- | Série 2 | [Excercices](https://elghouch.github.io/LSTAT2100/Labs/2.pdf) | [Corrigés](https://elghouch.github.io/LSTAT2100/Labs/2S.pdf) |
 
 
 
