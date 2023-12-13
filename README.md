@@ -13,7 +13,7 @@ Ce dépôt constitue le support de [LSTAT2100](https://uclouvain.be/cours-2023-l
 
 ## Travaux pratiques
 
-- Série 1: Utilisation de R.  [Excercices](Labs/1.pdf) | [Corrigés](Labs/1S.pdf)
+- Série 1: Utilisation de R.  | [Excercices](Labs/1.pdf) | [Corrigés](Labs/1S.pdf) |
 
 
 
