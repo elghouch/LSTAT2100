@@ -1,13 +1,19 @@
-# LSTAT2100
- Modèles linéaires généralisés et données discrètes
+Modèles linéaires généralisés et données discrètes
+================
+
+Ce dépôt constitue le support de
+[LSTAT2100](https://uclouvain.be/cours-2023-lstat2100). La page Moodle
+pour ce cours est disponible
+[ici](https://moodle.uclouvain.be/course/view.php?id=953)
 
 ## Notes de cours
 
-- [À propos du cours](https://elghouch.github.io/LSTAT2100/Lectures/Apropos.pdf)
+- [À propos du
+  cours](https://elghouch.github.io/LSTAT2100/Lectures/Apropos.pdf)
+- [Tableaux de contingence et tests
+  Chi$-2$.](https://elghouch.github.io/LSTAT2100/Lectures/tab.pdf)
 
 ## Documents complémentaires
 
-- [Likelihood method](https://elghouch.github.io/LSTAT2100/Lectures/Documents/Likelihood-Categorical-Data.pdf)
-
- 
-
+- [Likelihood
+  method](https://elghouch.github.io/LSTAT2100/Lectures/Documents/Likelihood-Categorical-Data.pdf)
