@@ -10,8 +10,8 @@ pour ce cours est disponible
 
 - [À propos du
   cours](https://elghouch.github.io/LSTAT2100/Lectures/Apropos.pdf)
-- [Tableaux de contingence et tests $`\sqrt{2}`$ Chi$`-2`$
-  Chi$-2$](https://elghouch.github.io/LSTAT2100/Lectures/tab.pdf)
+- [Tableaux de contingence et tests
+  Chi-2](https://elghouch.github.io/LSTAT2100/Lectures/tab.pdf)
 
 ## Documents complémentaires
 
