@@ -5,4 +5,9 @@
 
 - [À propos du cours](https://elghouch.github.io/LSTAT2100/Lectures/Apropos.pdf)
 
+## Documents complémentaires
+
+- [Likelihood method](https://elghouch.github.io/LSTAT2100/Lectures/Documents/Likelihood-Categorical-Data.pdf)
+
  
+
