@@ -13,8 +13,9 @@ Ce dépôt constitue le support de [LSTAT2100](https://uclouvain.be/cours-2023-l
 
 ## :zap: Travaux pratiques
 
+|       Série               |           Énoncés        |         Corrigés        |
 |---------------------------|--------------------------|-------------------------|
-| Série 1                   | [Énoncés](Labs/1.pdf)    | [Corrigés](Labs/1S.pdf) |
+|  1                        | [1.pdf](Labs/1.pdf)      | [1S.pdf](Labs/1S.pdf)   |
 
 
 ## :zap: Documents complémentaires
