@@ -56,7 +56,7 @@ rsconnect/
 README.Rmd
 
 Lectures/*
-!Lectures/data
+!Lectures/Data
 !Lectures/R
 !Lectures/Documents
 !Lectures/Apropos.pdf
