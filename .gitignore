@@ -54,9 +54,7 @@ rsconnect/
 
 Lectures/*
 !Lectures/data
-!Lectures/data/*
 !Lectures/R
-!Lectures/R/*
 !Lectures/Apropos.pdf
 
 
