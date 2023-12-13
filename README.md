@@ -11,6 +11,13 @@ Ce dépôt constitue le support de [LSTAT2100](https://uclouvain.be/cours-2023-l
 - [La régression de Poisson](https://elghouch.github.io/LSTAT2100/Lectures/pois.pdf)
 - [La régression logistique](https://elghouch.github.io/LSTAT2100/Lectures/logi.pdf)
 
+## :zap: Travaux pratiques
+
+|                           |                          |                         |
+|---------------------------|--------------------------|-------------------------|
+| Série 1                   | [Énoncés](Labs/1.pdf)    | [Corrigés](Labs/1S.pdf) |
+
+
 ## :zap: Documents complémentaires
 
 - [Likelihood method](https://elghouch.github.io/LSTAT2100/Lectures/Documents/Likelihood-Categorical-Data.pdf)  
