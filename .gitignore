@@ -54,7 +54,6 @@ rsconnect/
 
 *.Rproj
 .gitattributes
-README.Rmd
 
 Lectures/*
 !Lectures/Data
