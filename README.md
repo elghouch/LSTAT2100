@@ -1,4 +1,4 @@
-Modèles linéaires généralisés et données discrètes  &nbsp; &nbsp; &nbsp; &nbsp; [:file_folder:](https://github.com/elghouch/LSTAT2100)
+Modèles linéaires généralisés et données discrètes  &nbsp; &nbsp; [:file_folder:](https://github.com/elghouch/LSTAT2100)
 ================
 
 Cette page constitue le support de [LSTAT2100](https://uclouvain.be/cours-2023-lstat2100)   
