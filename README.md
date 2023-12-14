@@ -1,7 +1,7 @@
 LSTAT2100: Modèles linéaires généralisés et données discrètes
 ================
 
-Ce dépôt constitue le support de [LSTAT2100](https://uclouvain.be/cours-2023-lstat2100). La page Moodle pour ce cours est disponible [ici](https://moodle.uclouvain.be/course/view.php?id=953)
+Cette page constitue le support de [LSTAT2100](https://uclouvain.be/cours-2023-lstat2100). La page Moodle pour ce cours est disponible [ici](https://moodle.uclouvain.be/course/view.php?id=953). L'dresse du dépôt (repository) Git est  <https://github.com/elghouch/LSTAT2100>. 
 
 ## Notes de cours
 
