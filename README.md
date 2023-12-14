@@ -1,7 +1,9 @@
 LSTAT2100: Modèles linéaires généralisés et données discrètes
 ================
 
-Cette page constitue le support de [LSTAT2100](https://uclouvain.be/cours-2023-lstat2100). &nbsp; :link: [Moodle](https://moodle.uclouvain.be/course/view.php?id=953) &nbsp; :link: [GitHub repository](https://github.com/elghouch/LSTAT2100) &nbsp; :link: [GitHub page](https://elghouch.github.io/LSTAT2100/)
+Cette page constitue le support de [LSTAT2100](https://uclouvain.be/cours-2023-lstat2100).    
+
+&nbsp; :link: [Moodle](https://moodle.uclouvain.be/course/view.php?id=953) &nbsp; :link: [GitHub repository](https://github.com/elghouch/LSTAT2100) &nbsp; :link: [GitHub page](https://elghouch.github.io/LSTAT2100/)
 
 
 
