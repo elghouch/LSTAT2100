@@ -1,4 +1,5 @@
 plugins:
 - jekyll-remote-theme
 - jemoji
+- jekyll-feed
 
