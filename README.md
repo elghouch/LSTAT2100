@@ -1,7 +1,11 @@
 LSTAT2100: Modèles linéaires généralisés et données discrètes
 ================
 
-Cette page constitue le support de [LSTAT2100](https://uclouvain.be/cours-2023-lstat2100). La page Moodle pour ce cours est disponible [ici](https://moodle.uclouvain.be/course/view.php?id=953). L'dresse du dépôt (repository) Git est  <https://github.com/elghouch/LSTAT2100>. 
+Cette page constitue le support de [LSTAT2100](https://uclouvain.be/cours-2023-lstat2100). 
+
+:link: [Moodle](https://moodle.uclouvain.be/course/view.php?id=953) 
+:link: [GitHub repository](https://github.com/elghouch/LSTAT2100)
+:link: [GitHub page](https://elghouch.github.io/LSTAT2100/)
 
 ## :zap: Notes de cours
 
@@ -13,9 +17,9 @@ Cette page constitue le support de [LSTAT2100](https://uclouvain.be/cours-2023-l
 
 ## :zap: Travaux pratiques
 
-- Série 1  &nbsp; [Énoncés](https://elghouch.github.io/LSTAT2100/Labs/1.pdf) &nbsp; [Corrigés](https://elghouch.github.io/LSTAT2100/Labs/1S.pdf) |
-- Série 2 &nbsp; [Énoncés](https://elghouch.github.io/LSTAT2100/Labs/2.pdf)  &nbsp; [Corrigés](https://elghouch.github.io/LSTAT2100/Labs/2S.pdf) |
-- Série 3 &nbsp; [Énoncés](https://elghouch.github.io/LSTAT2100/Labs/3.pdf) &nbsp; [Corrigés](https://elghouch.github.io/LSTAT2100/Labs/3S.pdf) |
+- Série 1  &nbsp; [Énoncés](https://elghouch.github.io/LSTAT2100/Labs/1.pdf) &nbsp; [Corrigés](https://elghouch.github.io/LSTAT2100/Labs/1S.pdf)
+- Série 2 &nbsp; [Énoncés](https://elghouch.github.io/LSTAT2100/Labs/2.pdf)  &nbsp; [Corrigés](https://elghouch.github.io/LSTAT2100/Labs/2S.pdf)
+- Série 3 &nbsp; [Énoncés](https://elghouch.github.io/LSTAT2100/Labs/3.pdf) &nbsp; [Corrigés](https://elghouch.github.io/LSTAT2100/Labs/3S.pdf)
 
 
 ## :zap: Documents complémentaires
