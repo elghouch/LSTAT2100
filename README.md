@@ -5,6 +5,8 @@ Cette page constitue le support de [LSTAT2100](https://uclouvain.be/cours-2023-l
 
 ## Notes de cours
 
+I give this plugin two :+1:!
+
 - [À propos du cours](https://elghouch.github.io/LSTAT2100/Lectures/Apropos.pdf)
 - [Tableaux de contingence et tests Chi-2](https://elghouch.github.io/LSTAT2100/Lectures/tab.pdf)
 - [Introduction aux modèles linéaires généralisés : Méthodologie et concepts généraux](https://elghouch.github.io/LSTAT2100/Lectures/glm.pdf)
