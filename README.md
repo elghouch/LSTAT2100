@@ -5,7 +5,7 @@ Cette page constitue le support de [LSTAT2100](https://uclouvain.be/cours-2023-l
 
 <p style="text-align: center;">
 
-:page_with_curl: [Moodle](https://moodle.uclouvain.be/course/view.php?id=953) 
+:link: [Moodle](https://moodle.uclouvain.be/course/view.php?id=953) 
 :page_with_curl: [GitHub repository](https://github.com/elghouch/LSTAT2100)
 :page_with_curl: [GitHub page](https://elghouch.github.io/LSTAT2100/)
 
