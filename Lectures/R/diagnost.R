@@ -50,7 +50,7 @@ diagnost <- function(mod, type = "rqr", plots = c("response", "fitted", "qqplot"
       abline(a = 0, b = 1, col = "blue")
       mtext(side = 3, line = 0, adj = 0, cex = 0.8, paste("Response vs Fitted"), font = 2)
     } else if (plots[i] == "fitted") {
-      scatter.smooth(fitted(mod), rsd, degree = 2, lpars = list(col = gray(0.6)), main = NULL, xlab = "Predicted Values", ylab = "Residuals")
+      scatter.smooth(fitted(mod), rsd, lpars = list(col = gray(0.6)), main = NULL, xlab = "Predicted Values", ylab = "Residuals")
       abline(h = 0, col = "blue")
       mtext(side = 3, line = 0, adj = 0, cex = 0.8, paste(type, ":", "Residuals vs Fitted"), font = 2)
     } else if (plots[i] == "qqplot") {
@@ -58,11 +58,11 @@ diagnost <- function(mod, type = "rqr", plots = c("response", "fitted", "qqplot"
       qqline(rsd, col = "blue")
       mtext(side = 3, line = 0, adj = 0, cex = 0.8, paste(type, ":", "QQ-plot"), font = 2)
     } else if (plots[i] %in% names(mod$model)) {
-      scatter.smooth(mod$model[, plots[i]], rsd, degree = 2, lpars = list(col = gray(0.6)), xlab = plots[i], main = NULL, ylab = "Residuals")
+      scatter.smooth(mod$model[, plots[i]], rsd, lpars = list(col = gray(0.6)), xlab = plots[i], main = NULL, ylab = "Residuals")
       abline(h = 0, col = "blue")
       mtext(side = 3, line = 0, adj = 0, cex = 0.8, paste(type, ":", "Residuals vs", plots[i]), font = 2)
     } else if (plots[i] %in% names(mod$data)) {
-      scatter.smooth(mod$data[, plots[i]], rsd, degree = 2, xlab = plots[i], main = NULL, ylab = "Residuals")
+      scatter.smooth(mod$data[, plots[i]], rsd, xlab = plots[i], main = NULL, ylab = "Residuals")
       abline(h = 0, col = "blue")
       mtext(side = 3, line = 0, adj = 0, cex = 0.8, paste(type, ":", "Residuals vs", plots[i]), font = 2)
     }
