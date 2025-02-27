@@ -1,0 +1,299 @@
+%------------------------------------------------------------
+
+\makeatletter
+% Taken from http://ctan.org/pkg/centernot
+\newcommand*{\centernot}{%
+	\mathpalette\@centernot
+}
+\def\@centernot#1#2{%
+	\mathrel{%
+		\rlap{%
+			\settowidth\dimen@{$\m@th#1{#2}$}%
+			\kern.5\dimen@
+			\settowidth\dimen@{$\m@th#1=$}%
+			\kern-.5\dimen@
+			$\m@th#1\not$%
+		}%
+		{#2}%
+	}%
+}
+\makeatother
+
+
+%------------------------------------------------------------
+
+
+\usefonttheme{structuresmallcapsserif}
+\setbeamertemplate{frametitle}{\insertframetitle\\\usebeamerfont{framesubtitle}\insertframesubtitle}
+\setbeamerfont{frametitle}{size=\Large}
+\setbeamerfont{framesubtitle}{shape=\itshape}
+%\usefonttheme[onlymath]{serif}
+%\usefonttheme{professionalfonts}
+
+
+\setbeamerfont{myTOC}{size=\huge, shape=\scshape}
+\AtBeginSection[]{
+	\begin{frame}[noframenumbering,plain]
+	\centering
+	\begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+		\usebeamerfont{myTOC}\insertsectionhead\par%
+	\end{beamercolorbox}
+\end{frame}
+}
+
+
+\AtBeginSubsection[]
+{
+\begin{frame}[noframenumbering,plain]
+\begin{block}{\insertsectionhead}\end{block}
+\begin{flushright}
+	\Large \textsl{\insertsubsectionhead}
+\end{flushright}
+\end{frame}	
+}
+
+
+
+% footer
+\beamertemplatenavigationsymbolsempty
+% page number
+%\setbeamerfont{page number in foot}{size=\tiny}
+%\setbeamertemplate{footline}[frame number]
+\setbeamercolor{navigation symbols}{fg=gray}
+\makeatletter
+\setbeamertemplate{footline}
+{
+\ifnum \theframenumber=1
+       % This is the title frame, do nothing
+\else  
+ \ifnum \theframenumber=2
+       % This is the TOC frame, do nothing 
+\else
+\leavevmode%
+\hbox{%
+\begin{beamercolorbox}[wd=\paperwidth,ht=2.75ex,dp=.5ex,right,rightskip=0.5em]{mycolor}%
+\usebeamercolor[fg]{navigation symbols}\insertbackfindforwardnavigationsymbol%
+    \usebeamerfont{title in head/foot} 
+    \insertframenumber{} / \inserttotalframenumber
+  \end{beamercolorbox}
+}%
+\fi 
+\fi 
+}
+\makeatother
+
+
+% center title of slides
+\setbeamertemplate{blocks}[rounded]
+%\setbeamertemplate{frametitle}[default][center] %center
+
+%\setbeamertemplate{itemize items}[default]
+%\setbeamertemplate{itemize items}[ball]
+\setbeamertemplate{itemize items}[circle]
+
+
+%------------------------------------------------------------
+
+\usepackage{fancyvrb}
+\usepackage{cleveref} %http://tug.ctan.org/tex-archive/macros/latex/contrib/cleveref/cleveref.pdf
+\usepackage{lscape}
+\usepackage{alltt}
+\usepackage[at]{easylist} % list utility
+\usepackage{booktabs} % table toprule, midrule, bottomrule
+\usepackage[utf8]{inputenc}
+\usepackage[french,english]{babel}
+% Choose a font; see http://www.tug.dk/FontCatalogue/ 
+%-----------------------------------
+
+
+\usepackage[T1]{fontenc} % Needed for Type1 Concrete
+\usepackage{concmath} % Concrete + Concmath
+
+
+
+%\usepackage{mathptmx} % Times
+%\usepackage{courier} % Avant Garde
+
+
+%\usepackage{mathptmx}
+%\usepackage[math]{kurier}
+%\usepackage[T1]{fontenc}
+%\usepackage{cmbright}
+%\usepackage[T1]{fontenc}
+%\usepackage[default]{gfsneohellenic}
+%\usepackage[LGR,T1]{fontenc}
+%\usepackage[light]{antpolt}
+%\usepackage[T1]{fontenc}
+%\usepackage[math]{anttor}
+%\usepackage[T1]{fontenc}
+%\usepackage[sc]{mathpazo}
+%\linespread{1.05} 
+%\usepackage[T1]{fontenc}
+%-----------------------------------
+\usepackage{listings}
+\usepackage{comment}
+\usepackage{amsmath,amssymb, bm, mathtools}
+\usepackage[euler-digits,euler-hat-accent]{eulervm}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{bigstrut}
+\usepackage{framed}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{booktabs}
+\usepackage{dcolumn}
+\usepackage{longtable}
+\usepackage{array}
+%\usepackage{xcolor}
+%\usepackage[table]{xcolor}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{appendixnumberbeamer}
+
+\usepackage{ocgx}
+
+\definecolor{shadecolor}{RGB}{252, 252, 252}
+
+\captionsetup[figure]{labelformat=empty}
+\captionsetup[table]{labelformat=empty}
+
+%------------------------------------------------------------
+
+\usepackage{ragged2e}
+
+\apptocmd{\frame}{}{\justifying}{}
+\addtobeamertemplate{block begin}{}{\justifying}
+
+\makeatletter
+\renewcommand{\itemize}[1][]{%
+\beamer@ifempty{#1}{}{\def\beamer@defaultospec{#1}}%
+\ifnum \@itemdepth >2\relax\@toodeep\else
+\advance\@itemdepth\@ne
+\beamer@computepref\@itemdepth% sets \beameritemnestingprefix
+\usebeamerfont{itemize/enumerate \beameritemnestingprefix body}%
+\usebeamercolor[fg]{itemize/enumerate \beameritemnestingprefix body}%
+\usebeamertemplate{itemize/enumerate \beameritemnestingprefix body begin}%
+\list
+{\usebeamertemplate{itemize \beameritemnestingprefix item}}
+{\def\makelabel##1{%
+	{%
+		\hss\llap{{%
+				\usebeamerfont*{itemize \beameritemnestingprefix item}%
+				\usebeamercolor[fg]{itemize \beameritemnestingprefix item}##1}}%
+	}%
+}%
+}
+\fi%
+\beamer@cramped%
+\justifying% NEW
+%\raggedright% ORIGINAL
+\beamer@firstlineitemizeunskip%
+}
+\makeatother
+
+%------------------------------------------------------------
+
+
+
+% define a bunch of colors
+\definecolor{offwhite}{RGB}{255,250,240}
+\definecolor{gray}{RGB}{155,155,155}
+\definecolor{foreground}{RGB}{80,80,80}
+\definecolor{background}{RGB}{255,255,255}
+\definecolor{lightgray}{RGB}{252, 252, 252}
+%\definecolor{title}{RGB}{255,199,0}
+\definecolor{title}{RGB}{89,132,212}
+%\definecolor{subtitle}{RGB}{89,132,212}
+\definecolor{subtitle}{RGB}{255,199,0}
+\definecolor{hilit}{RGB}{248,117,79}
+\definecolor{vhilit}{RGB}{255,111,207}
+\definecolor{lolit}{RGB}{200,200,200}
+\definecolor{lit}{RGB}{255,199,0}
+\definecolor{mdlit}{RGB}{71,106,170}
+\definecolor{link}{RGB}{248,117,79}
+\definecolor{subcol}{RGB}{207,216,233}
+
+% a few color macros
+\newcommand{\hilit}{\color{hilit}}
+\newcommand{\vhilit}{\color{vhilit}}
+\newcommand{\lit}{\color{lit}}
+\newcommand{\mdlit}{\color{mdlit}}
+\newcommand{\lolit}{\color{lolit}}
+
+% use those colors
+%\setbeamercolor{titlelike}{fg=title}
+\setbeamercolor{titlelike}{fg=mdlit}
+%\setbeamercolor{subtitle}{fg=subtitle}
+\setbeamercolor{subtitle}{fg=subcol}
+\setbeamercolor{frametitle}{fg=gray}
+%\setbeamercolor{structure}{fg=subtitle}
+\setbeamercolor{structure}{fg=title}
+\setbeamercolor{institute}{fg=lolit}
+\setbeamercolor{normal text}{fg=foreground,bg=background}
+\setbeamertemplate{itemize subitem}{{\textendash}}
+\setbeamerfont{itemize/enumerate subbody}{size=\small}
+\setbeamerfont{itemize/enumerate subitem}{size=\small}
+% default link color
+\hypersetup{colorlinks, urlcolor={link}}
+
+%------------------------------------------------------------
+
+% a few macros
+\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\hicode}[1]{{\hilit \texttt{#1}}}
+\newcommand{\locode}[1]{{\lolit \texttt{#1}}}
+\newcommand{\bb}[1]{\begin{block}{#1}}
+\newcommand{\eb}{\end{block}}
+\newcommand{\bi}{\begin{itemize}}
+\newcommand{\bbi}{\vspace{4pt} \begin{itemize} \itemsep8pt}
+\newcommand{\ei}{\end{itemize}}
+\newcommand{\bv}{\begin{verbatim}}
+\newcommand{\ev}{\end{verbatim}}
+\newcommand{\ig}{\includegraphics}
+\newcommand{\subt}[1]{{\footnotesize \color{subtitle} {#1}}}
+\newcommand{\ttsm}{\tt \small}
+\newcommand{\ttfn}{\tt \footnotesize}
+\newcommand{\figh}[2]{\centerline{\includegraphics[height=#2\textheight]{#1}}}
+\newcommand{\figw}[2]{\centerline{\includegraphics[width=#2\textwidth]{#1}}}
+
+\newcommand{\sn}{{\smallskip\noindent}}
+\newcommand{\mn}{{\medskip\noindent}}
+\newcommand{\bn}{{\bigskip\noindent}}
+\newcommand{\ind}{\perp\mkern-9.5mu\perp}
+\newcommand{\nind}{\centernot{\ind}}
+
+%------------------------------------------------------------
+
+
+%\setlength{\columnseprule}{0.5pt}
+%\def\columnseprulecolor{\color{lolit}} 
+\setlength{\columnsep}{0.85cm}
+
+
+
+\setbeamercolor{block title}{use=structure,fg=vhilit,bg=white}
+%\setbeamercolor{block body}{parent=normal text,use=block title,bg=block title.bg!10!bg}
+
+
+
+%% change fontsize of R code
+%\let\oldShaded\Shaded
+%\let\endoldShaded\endShaded
+%\renewenvironment{Shaded}{\scriptsize\oldShaded}{\endoldShaded}
+%\definecolor{shadecolor}{gray}{0.995}
+
+%% change fontsize of output
+%\let\oldverbatim\verbatim
+%\let\endoldverbatim\endverbatim
+%\renewenvironment{verbatim}{\scriptsize\oldverbatim}{\endoldverbatim}
+

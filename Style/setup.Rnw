@@ -1,0 +1,100 @@
+<<setup, include=FALSE>>=
+
+options(repos="https://cran.rstudio.com" )
+
+require(knitr)
+require(kable)
+require(kableExtra)
+require(latex2exp)
+require(ggplot2)
+require(patchwork)
+
+opts_chunk$set(
+fig.align='center', dev='pdf', tidy=FALSE,
+fig.width=8, fig.height=5, 
+out.width='0.90\\textwidth', fig.show='hold',
+cache=TRUE, par=TRUE, autodep = FALSE,
+size = 'footnotesize',
+comment = NA, prompt=TRUE, tidy=TRUE, rows.print=10,
+background = rgb(0.995, 0.995, 0.995), size='scriptsize',
+cache.path = paste(gsub(".Rnw", "", cache.path), "/", sep=""),
+fig.path = paste(gsub(".Rnw", "", fig.path), "/", sep="")
+)
+
+knit_hooks$set(
+par=function(before, options, envir){
+if (before && options$fig.show!='none') par(mar=c(4,4,1.6,.2),
+cex=1, cex.lab=.95,cex.axis=.9,mgp=c(2,.7,0),tcl=-.3)
+}, 
+crop=hook_pdfcrop)
+
+options(
+# , scipen = 0,
+# prompt='R> ', 
+continue='  ',
+width = 78, digits = 3,
+knitr.kable.NA = "NA",
+htmltools.dir.version = FALSE, replace.assign=TRUE,
+knitr.table.format = "latex"
+)
+
+knit_theme$set("tcsoft")
+
+theme_set(theme_minimal())
+
+# theme_set(
+# theme_grey() + theme_bw() +
+#    theme(
+#      strip.text = element_text(face = "bold", size = 12, margin = margin()),
+#      legend.title = element_text(face = "bold", size = 10),
+#      #legend.position="top",
+#      legend.text = element_text(face = "bold", size = 10),
+#      plot.title = element_text(face = "bold", size = 14),
+#      axis.title.x = element_text(face = "bold", size = 10),
+#      axis.title.y = element_text(face = "bold", size = 10),
+#      axis.text.x = element_text(face = "bold", size = 10),
+#      axis.text.y = element_text(face = "bold", size = 10),
+#      axis.line.x = element_line(color = "black", size = 0.5),
+#      axis.line.y = element_line(color = "black", size = 0.5)
+#    )
+#)
+
+#----------------------------------------
+# knitr hook function to allow an output.lines option
+# e.g.,
+#   "output.lines=n" prints lines 1:n ...
+#   "output.lines=1:n" does the same
+#   "output.lines=3:15" prints lines ... 3:15 ...
+#   "output.lines=-(1:8)" removes lines 1:8 and prints ... 9:n ...
+#   No allowance for anything but a consecutive range of lines
+
+hook_output <- knit_hooks$get("output")
+knit_hooks$set(output = function(x, options) {
+  lines <- options$output.lines
+  if (is.null(lines)) {
+    return(hook_output(x, options)) # pass to default hook
+  }
+  x <- unlist(strsplit(x, "\n"))
+  if (length(lines) == 1) { # first n lines
+    if (length(x) > lines) {x <- head(x, lines)}
+  } else {x <- x[lines]}
+  # paste these lines together
+  x <- paste(c(x, ""), collapse = "\n")
+  hook_output(x, options)
+})
+#----------------------------------------
+@
+
+<<include = FALSE>>=
+# https://bookdown.org/yihui/rmarkdown-cookbook/global-device.html
+opts_knit$set(global.par = TRUE)
+@
+
+<<include = FALSE>>=
+#par(mar = c(4, 4, .1, .1))
+par(mar = c(2, 2, 2, 2))
+@  
+
+<<include = FALSE>>=
+par(pch=16)
+@

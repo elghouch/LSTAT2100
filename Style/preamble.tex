@@ -1,0 +1,95 @@
+% page structure
+%\usepackage[includeheadfoot,top=3.5mm,bottom=3.5mm,left=5.5mm,right=5.5mm,headsep=6.5mm,footskip=8.5mm,paperwidth=160mm,paperheight=90mm]{geometry}% set page
+
+%\usepackage[paperwidt=12.8cm,paperheight=9.6cm,hmargin=1cm,vmargin=0cm,head=0.5cm,headsep=0pt,foot=0.5cm]{geometry}
+
+\usepackage{float}
+\floatplacement{figure}{H}
+\floatplacement{table}{H}
+\usepackage{tabu}
+\usepackage{ifthen}
+\usepackage{multicol}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks = true,
+}
+
+
+\raggedbottom
+
+\usepackage{comment}
+
+\usepackage[sc]{mathpazo}
+\usepackage[T1]{fontenc}
+\usepackage[scaled]{helvet}
+
+
+\usepackage{bm}
+
+\usepackage{scrlayer-scrpage}
+\pagestyle{scrheadings} 
+\clearpairofpagestyles
+\ofoot[]{\pagemark}
+
+\usepackage{setspace}
+\onehalfspacing
+%\doublespacing
+
+%\renewcommand{\baselinestretch}{1.5}
+%\linespread{1.05}
+
+
+\newcommand{\sclearpage}{\clearpage}
+
+\newcommand{\independent}{\perp \!\!\! \perp}
+
+
+
+%% Note: Pandoc (which is doing all of the output conversion behind the scenes) does not parse the content of LaTeX environments. This creates problems when you try to include LaTeX commands with curly brackets directly in your Rmd file. E.g. You can't just use `\begin{multicols}{2}` directly in your Rmd file. Luckily, a straightforward workaround is to simply define some new shortcut commands yourself as per the below.
+%% See: https://stackoverflow.com/questions/25849814/rstudio-rmarkdown-both-portrait-and-landscape-layout-in-a-single-pdf/27334272#27334272
+
+\newcommand{\btwocol}[1]{\begin{multicols}{#1}}
+\newcommand{\etwocol}{\end{multicols}}
+
+
+%% See: https://bookdown.org/yihui/rmarkdown-cookbook/multi-column-layout.html
+%% I've made some additional adjustments based on my own preferences (e.g. cols
+%% should be top-aligned in case of uneven vertical length)
+\newenvironment{columns}[1][]{}{}
+%%
+\newenvironment{column}[1]{\begin{minipage}[t]{#1}\ignorespaces \vspace{0pt} }{%
+\vfill \end{minipage}\hfill 
+\ifhmode\unskip\fi
+\aftergroup\useignorespacesandallpars}
+%%
+\def\useignorespacesandallpars#1\ignorespaces\fi{%
+#1\fi\ignorespacesandallpars}
+%%
+\makeatletter
+
+\def\ignorespacesandallpars{%
+  \@ifnextchar\par
+    {\expandafter\ignorespacesandallpars\@gobble}%
+    {}%
+}
+\makeatother
+
+
+\newenvironment{panelset}[1][]{}{}
+%%
+\newenvironment{panel}[1]{}{}
+%%
+\makeatletter
+
+
+\newenvironment{main-gallery}[1][]{}{}
+%%
+\newenvironment{gallery-cell}[1]{}{}
+%%
+\makeatletter
+
+
+
+\newenvironment{slider}[1][]{}{}
+%%
+\makeatletter
