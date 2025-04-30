@@ -14,6 +14,7 @@ Modèles linéaires généralisés et données discrètes
 - Série 1  &nbsp; [Énoncés](https://elghouch.github.io/LSTAT2100/Labs/1.pdf) &nbsp; [Corrigés](https://elghouch.github.io/LSTAT2100/Labs/1S.pdf)
 - Série 2 &nbsp; [Énoncés](https://elghouch.github.io/LSTAT2100/Labs/2.pdf)  &nbsp; [Corrigés](https://elghouch.github.io/LSTAT2100/Labs/2S.pdf)
 - Série 3 &nbsp; [Énoncés](https://elghouch.github.io/LSTAT2100/Labs/3.pdf) &nbsp; [Corrigés](https://elghouch.github.io/LSTAT2100/Labs/3S.pdf)
+- Série 4 &nbsp; [Énoncés](https://elghouch.github.io/LSTAT2100/Labs/4.pdf) &nbsp; [Corrigés](https://elghouch.github.io/LSTAT2100/Labs/4S.pdf)
 
 
 ## :zap: Documents complémentaires
