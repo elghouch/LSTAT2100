@@ -20,4 +20,4 @@ Modèles linéaires généralisés et données discrètes
 ## :zap: Documents complémentaires
 
 - [Likelihood method](https://elghouch.github.io/LSTAT2100/Lectures/Documents/Likelihood-Categorical-Data.pdf)  
-- [Exploration de données avec R](https://elghouch.github.io/ExploR/)
+- [Exploration de données avec R](https://elghouch.github.io/ExploR02/)
